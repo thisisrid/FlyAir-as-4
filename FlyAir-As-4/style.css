@@ -11,7 +11,8 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
-    background-size: cover;
+    background-size:cover;
+    height: 100vh;
 }
 
 nav{
@@ -38,13 +39,37 @@ nav ul li a:hover, a.active{
     background-color: #3352F2;
     border-radius: 5px;
 }
+#confirmation-area, #selectNone{
+    display: none;
+}
+.feedback{
+    color: white;
+    width: 80%;
+    margin: 250px auto;
+    padding: 5rem 0;
+    text-align: center;
+    background-color: #F4051F;
+    border-radius: 20px;
+}
+.feedback-btn-style{
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background-color:  #3352F2;
+}
 .main-content{
+    
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 70px;
     align-items: center;
 }
 .booking-form{
+    margin: 0 20px;
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 25px;
@@ -72,13 +97,12 @@ nav ul li a:hover, a.active{
     padding: 2px;
     margin-top: 10px;
     word-spacing: 20px;
-    cursor: pointer;
+    
 }
-
-#economy-plus,#firstClass-plus{
-    width: 15px;
-    height: 20px;
-    background-color: chartreuse;
+.plus-minus-btn button {
+    width: 20px;
+    font-size: 30px;
+    cursor: pointer;
 }
 .booking-form  .calculations{
     margin: 10px 0;

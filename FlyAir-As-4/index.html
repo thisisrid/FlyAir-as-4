@@ -21,13 +21,27 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a class="active" href="#">Sign Up</a></li>
+                <li><a class="active" href="#">Signed</a></li>
             </ul>
         </nav>
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <section id="selectNone">
+        <div class="feedback">
+            <h1> Choose Ticket First!!</h1>
+        <button id="go-back-error" class="feedback-btn-style">Go Back</button>
+        </div>
+    </section>
+    <section id="confirmation-area">
+        <div class="feedback">
+            <h1>Thank You for keeping Trust on Us!!</h1>
+            <h2>You Purchases <span id="ticketNumb"> </span> Tickets</h2>
+            <h2>Total cost = <span id="ticketPrice"> </span> <small>(including vat)</small></h2>
+            <button id="go-back" class="feedback-btn-style">Go Back</button>
+        </div>
+    </section>
+    <main id="main-form" class="main-content container">
         <div class="booking-form">
             <h3>Booking Flights</h3>
             <div class="input-group">
@@ -55,8 +69,8 @@
                     <input id="firstClass-quantity" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <span id="firstClass-plus"> + </span><br>
-                    <span id="firstClass-minus"> - </span>
+                    <button id="firstClass-plus"> + </button><br>
+                    <button id="firstClass-minus"> - </button>
                 </div>
             </div>
 
@@ -66,8 +80,8 @@
                     <input id="economy-quantity" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <span id="economy-plus"> + </span><br>
-                    <span id="economy-minus"> - </span>
+                    <button id="economy-plus"> + </button><br>
+                    <button id="economy-minus"> - </button>
                 </div>
             </div>
             <div class="calculations">
@@ -98,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="booking" class="btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">
@@ -111,7 +125,7 @@
 
     <!--Thank You-->
 
-    <script src="style.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
